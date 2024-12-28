@@ -1,0 +1,26 @@
+server:
+   port : 8091
+   servlet:
+     context-path: /employee/project
+
+spring:
+    application: 
+        name : Employee
+    datasource:
+       url : jdbc:postgresql://localhost:5432/employee
+       username : postgres
+       password: 1234
+
+logging:
+     level:
+        root: info
+        '[com.Employee]': info
+        '[reactor.netty.http.client]': info
+     pattern:
+        level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+     file:
+        name: ./logs/employee.log
+     logback:
+        rollingpolicy:
+            max-file-size: 300MB
+            max-history: 30		 		

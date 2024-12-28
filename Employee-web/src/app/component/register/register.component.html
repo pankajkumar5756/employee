@@ -1,0 +1,171 @@
+<div class="min-h-screen w-full bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-3xl">
+        <img class="mx-auto h-10 w-auto" src="https://www.svgrepo.com/show/301692/login.svg" alt="Workflow" />
+        <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">Create account</h2>
+        <p class="mt-2 text-center text-sm leading-5 text-gray-500 max-w">
+            Or
+            <a href="#" class="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150"> login to your account </a>
+        </p>
+    </div>
+
+    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-[60%] px-4 sm:px-6 lg:px-8">
+        <!-- Added padding here -->
+        <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+            <form method="POST" action="#">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+                    <!-- First Name -->
+
+                    <div class="w-full">
+                        <label for="first_name" class="inputLabel">First Name</label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <input
+                                id="first_name"
+                                name="first_name"
+                                placeholder="John"
+                                type="text"
+                                required=""
+                                class="inputBox"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Middle Name -->
+                    <div class="w-full">
+                        <label for="middle_name" class="inputLabel">Middle Name</label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <input
+                                id="middle_name"
+                                name="middle_name"
+                                placeholder="Doe"
+                                type="text"
+                                class="inputBox"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="w-full">
+                        <label for="last_name" class="inputLabel">Last Name</label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <input
+                                id="last_name"
+                                name="last_name"
+                                placeholder="Smith"
+                                type="text"
+                                required=""
+                                class="inputBox"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Dob -->
+                    <div class="w-full">
+                        <label for="email" class="inputLabel">Date of Birth</label>
+                        
+                        <input
+                                id="last_name"
+                                name="last_name"
+                                placeholder="Smith"
+                                type="text"
+                                required=""
+                                class="inputBox"
+                            />
+                        <!-- <mat-form-field>
+                            <mat-label>Choose a date</mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field> -->
+
+                    </div>
+
+                    <!-- Gender -->
+                    
+                    <div class="w-full">
+                        <label for="phone" class="inputLabel">Gender</label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <mat-form-field>
+                                <mat-label>Favorite food</mat-label>
+                                <mat-select (selectionChange)="onFoodChange($event)" name="food">
+                                  <mat-option *ngFor="let food of foods" [value]="food.value">{{food.viewValue}}</mat-option>
+                                </mat-select>
+                              </mat-form-field>                             
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="w-full">
+                        <label for="phone" class="inputLabel">Mobile Number</label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <input
+                                id="phone"
+                                name="phone"
+                                placeholder="123-456-7890"
+                                type="text"
+                                class="inputBox"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="w-full">
+                        <label for="phone" class="inputLabel">Email Address</label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <input
+                                id="phone"
+                                name="phone"
+                                placeholder="123-456-7890"
+                                type="text"
+                                class="inputBox"
+                            />
+                        </div>
+                    </div>
+                    <!-- password -->
+                    <div class="w-full">
+                        <label for="phone" class="inputLabel">Password</label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <input
+                                id="phone"
+                                name="phone"
+                                placeholder="123-456-7890"
+                                type="text"
+                                class="inputBox"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- comfirm password -->
+                    <div class="w-full">
+                        <label for="phone" class="inputLabel">Comfirm Password</label>
+                        <div class="mt-1 relative rounded-md shadow-sm">
+                            <input
+                                id="phone"
+                                name="phone"
+                                placeholder="123-456-7890"
+                                type="text"
+                                class="inputBox"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="mt-6">
+                            <mat-checkbox class="example-margin">Please tick me if you are ready to register.</mat-checkbox>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <span class="block w-full rounded-md shadow-sm">
+                        <button
+                            type="submit"
+                            class="submit-Btn"
+                        >
+                            Create account
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

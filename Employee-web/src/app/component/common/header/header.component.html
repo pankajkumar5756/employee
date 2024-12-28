@@ -1,0 +1,67 @@
+<nav x-data="{ open: false }" class="bg-gray-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between border-b border-gray-200">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=violet&amp;shade=500" alt="Your Company" />
+                </div>
+
+                <div class="hidden lg:ml-10 lg:block">
+                    <div class="flex space-x-4">
+                        <a
+                            href="#"
+                            class="bg-gray-100 px-3 py-2 rounded-md text-sm font-medium text-gray-900"
+                            aria-current="page"
+                            x-state:on="Current"
+                            x-state:off="Default"
+                            x-state-description='Current: "bg-gray-100", Default: "hover:text-gray-700"'
+                            >Dashboard</a
+                        >
+
+                        <a
+                            href="#"
+                            class="hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-gray-900"
+                            x-state-description='undefined: "bg-gray-100", undefined: "hover:text-gray-700"'
+                            >Jobs</a
+                        >
+
+                        <a
+                            href="#"
+                            class="hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-gray-900"
+                            x-state-description='undefined: "bg-gray-100", undefined: "hover:text-gray-700"'
+                            >Applicants</a
+                        >
+
+                        <a
+                            href="#"
+                            class="hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-gray-900"
+                            x-state-description='undefined: "bg-gray-100", undefined: "hover:text-gray-700"'
+                            >Company</a
+                        >
+                    </div>
+                </div>
+
+                <div class="absolute right-0 mt-2 w-48 origin-top-right rounded-md py-1">
+                    <a
+                        href="#"
+                        class="hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-gray-900"
+                        x-state-description='undefined: "bg-gray-100", undefined: "hover:text-gray-700"'
+                        >login</a
+                    >
+                    <a
+                        href="#"
+                        class="hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-gray-900"
+                        x-state-description='undefined: "bg-gray-100", undefined: "hover:text-gray-700"'
+                        >Name</a
+                    >
+                    <a
+                        href="#"
+                        class="hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium text-gray-900"
+                        x-state-description='undefined: "bg-gray-100", undefined: "hover:text-gray-700"'
+                        >Logout</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
